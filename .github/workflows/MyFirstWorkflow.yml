@@ -13,9 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps: 
-      - run: echo "Hello world from ${{ github.actor }}."
-               echo "Current branch is '${{ github.ref }}'."
+      - run: |
+             echo "Hello world from ${{ github.actor }}."
+             echo "Current branch is '${{ github.ref }}'."
       - name: Checkout
-      - uses: actions/checkout@v4.1.0
+        uses: actions/checkout@v4.1.0
       - run: tree
   
