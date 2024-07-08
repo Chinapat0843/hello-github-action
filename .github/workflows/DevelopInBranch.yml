@@ -19,4 +19,4 @@ jobs:
           echo "::error::This is an error message."
      - uses: actions/checkout@v4.1.0
      - uses: devops-actions/actionlint@v0.1.2
-     - run: echo "${{ github.event.pull_request.title }}"
+     #- run: echo "${{ github.event.pull_request.title }}"
